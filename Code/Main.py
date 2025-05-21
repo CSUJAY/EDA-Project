@@ -38,7 +38,7 @@ section = st.sidebar.radio("Navigate to:", [
 def load_data(file=None):
     if file:
         return pd.read_csv(file)
-    return pd.read_csv("C:/Users/DELL/OneDrive/Desktop/EDA project/Dataset/Heart_disease_cleveland_new.csv")
+    return pd.read_csv("Dataset/Heart_disease_cleveland_new.csv")
 
 uploaded_file = st.sidebar.file_uploader("Upload CSV", type=["csv"])
 df = load_data(uploaded_file)
